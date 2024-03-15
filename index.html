@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<!-- <html>
   <head>
     <title>내가 좋아하는 빵 | 동네 빵집</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,4 +20,32 @@
     </div>
     <script src="script.js"></script>
   </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>어플 소개 페이지</title>
+    <link rel="stylesheet" href="style.css"> <!-- 필요한 경우 CSS 파일 참조 -->
+</head>
+<body>
+    <div class="app-introduction">
+        <img src="https://firebasestorage.googleapis.com/v0/b/fir-bbangjip.appspot.com/o/Empty_r.png?alt=media&token=c04e927e-6a91-481a-9b1a-1280542914a2" alt="어플 설명 이미지 1">
+        <img src="https://firebasestorage.googleapis.com/v0/b/fir-bbangjip.appspot.com/o/Empty_r.png?alt=media&token=c04e927e-6a91-481a-9b1a-1280542914a2" alt="어플 설명 이미지 2">
+        <!-- 이미지 추가 -->
+    </div>
+    <div class="download-link">
+        <a href="link/to/app/download" id="downloadLink">어플 다운로드</a>
+    </div>
+    <script>
+        // 사용자의 환경을 체크하여 링크 동작 조정
+        document.getElementById('downloadLink').addEventListener('click', function(e) {
+            if (!/Mobi|Android/i.test(navigator.userAgent)) {
+                e.preventDefault();
+                alert("모바일에서 이용 가능한 링크입니다.");
+            }
+        });
+    </script>
+</body>
 </html>
